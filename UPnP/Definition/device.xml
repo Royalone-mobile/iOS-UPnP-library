@@ -4,7 +4,7 @@
 		<major>1</major>
 		<minor>0</minor>
 	</specVersion>
-	<URLBase>http://192.168.1.101:5001/</URLBase>
+	<URLBase>http://192.168.1.101:5055/</URLBase>
 	<device>
 		<dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">DMS-1.50</dlna:X_DLNADOC>
 		<dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">M-DMS-1.50</dlna:X_DLNADOC>
@@ -28,7 +28,7 @@
 				<url>/images/icon-256.png</url>
 			</icon>
 		</iconList>
-		<presentationURL>http://192.168.1.101:5001/console/index.html</presentationURL> 
+		<presentationURL></presentationURL> 
 		<serviceList>
 			<service>
 				<serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</serviceType>
