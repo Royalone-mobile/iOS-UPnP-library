@@ -8,6 +8,7 @@
 
 #import "UPnPViewController.h"
 #import "MediaServerManager.h"
+#import "FileServer.h"
 
 @implementation UPnPViewController
 
@@ -36,6 +37,7 @@
 {
     [super viewWillAppear:animated];
     [[MediaServerManager sharedInstance] startMediaServer];
+    [[FileServer sharedInstance] startFileServer];
 }
 
 - (void)viewDidAppear:(BOOL)animated

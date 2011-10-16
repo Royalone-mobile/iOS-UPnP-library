@@ -7,6 +7,8 @@
 //
 
 #import "UPnPAppDelegate.h"
+#import "DDTTYLogger.h"
+#import "DDLog.h"
 
 @implementation UPnPAppDelegate
 
@@ -14,8 +16,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Turn on logging to the console
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
